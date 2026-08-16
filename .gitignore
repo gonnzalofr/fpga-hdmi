@@ -1,0 +1,47 @@
+# Vivado autogen state
+*.jou
+*.log
+*.pb
+*.str
+.Xil/
+*.cache/
+*.cache_*/
+*.hw/
+*.runs/
+*.sim/
+*.ip_user_files/
+
+# Verilator
+obj_dir/
+
+# C build outputs
+*.o
+*.a
+*.so
+*.exe
+*.out
+build/
+dist/
+out/
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets & local config
+.env
+config.py
+*.local
+
+# HDMI-specific
+# regenerable sim output (2.5 MB uncompressed)
+*.ppm
+# empty placeholder, not yet written
+/check_frame.py
