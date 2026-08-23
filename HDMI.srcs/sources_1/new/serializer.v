@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module serializer #(
-parameter CLK = 125e6, CLKDIV = 25e6, 
+parameter CLK = 125e6, CLKDIV = 25e6
 
 
 )(
@@ -20,7 +20,7 @@ output wire SHIFTOUT1,
 output wire SHIFTOUT2,
 output wire SHIFTIN1,
 output wire SHIFTIN2
-    );
+);
     
     
 

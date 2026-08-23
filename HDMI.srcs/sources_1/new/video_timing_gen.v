@@ -11,7 +11,7 @@ module video_timing_gen #(
     output reg [11:0] y
 );
 
-reg [11:0] h_count = 0, v_count = 0 ;
+reg [11:0] h_count = 0, v_count = 0;
 
 localparam H_TOTAL      = H_ACTIVE + H_FP + H_SYNC + H_BP;
 localparam H_SYNC_START = H_ACTIVE + H_FP;
@@ -42,8 +42,6 @@ localparam V_SYNC_END   = V_ACTIVE + V_FP + V_SYNC;
         vsync <= (v_count >= V_SYNC_START) && (v_count < V_SYNC_END) ? V_POL: ~V_POL;
         
         de <= (h_count < H_ACTIVE && v_count < V_ACTIVE);
-        
-        
     end
 
 
